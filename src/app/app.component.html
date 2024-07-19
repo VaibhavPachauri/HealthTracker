@@ -1,0 +1,8 @@
+<div style="text-align:center">
+  <h1>
+    Workout Tracker
+  </h1>
+</div>
+<app-user-input (userAdded)="userChartComponent.updateChartData()"></app-user-input>
+<app-user-list></app-user-list>
+<app-user-chart #userChartComponent></app-user-chart>
