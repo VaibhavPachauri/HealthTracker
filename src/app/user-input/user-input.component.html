@@ -1,0 +1,12 @@
+<form (ngSubmit)="addUser()">
+  <mat-form-field>
+    <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Workout Type" [(ngModel)]="workoutType" name="workoutType" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Workout Minutes" [(ngModel)]="workoutMinutes" name="workoutMinutes" required>
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Add User</button>
+</form>
